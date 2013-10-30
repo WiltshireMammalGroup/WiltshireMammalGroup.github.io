@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="col-lg-8">	
+    <div class="well">
+        <h2>{{ page.title | capitalize }}</h2>		
+        {{content}}
+    </div>
+</div>
+<div class="col-lg-4">
+    <div class="well">
+        <h2>Recent Posts</h2>
+        <ul id="recent_posts">
+            {% for post in site.posts limit: site.recent_posts %}
+              <li class="post">
+                <a href="{{ root_url }}{{ post.url }}">{{ post.title | capitalize }}</a>
+              </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
