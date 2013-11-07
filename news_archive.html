@@ -7,7 +7,7 @@ position: 10
 <div class="col-lg-8">
     {% for post in site.posts %}
         <div class="well">
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h2><a href="{{ post.url }}">{{ post.title | capitalize }}</a></h2>
             <p>{{ post.excerpt }}</p>
         </div>
     {% endfor %}
@@ -15,4 +15,3 @@ position: 10
 <div class="col-lg-4">
 
 </div>
-			
