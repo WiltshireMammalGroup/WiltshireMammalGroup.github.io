@@ -21,15 +21,19 @@
 			<div class="row">
 				<div class="navbar">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="records.html">Records</a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="get_involved.html">Get Involved</a></li>
-						<li><a href="join.html">Join</a></li>
-						<li><a href="key_partners.html">Key Partners</a></li>
-						<li><a href="contact_us.html">Contact Us</a></li>
-						<li class="active"><a href="faqs.html">FAQ's</a></li>
-						<li><a href="useful_links.html">Useful Links</a></li>
+					    {% for current_position in (1..site.pages.size) %}
+				            {% for node in site.pages %}
+                                {% if node.position %} 
+                                    {% if node.position == current_position %}
+                                        {% if node.url == page.url %}
+                                            <li class="active"><a href="{{node.url}}" class="active">{{node.title | capitalize}}</a></li>
+                                        {% else %}
+                                            <li><a href="{{node.url}}">{{node.title | capitalize}}</a></li>
+                                        {% endif %}
+                                    {% endif %}                                         
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
 					</ul>
 				</div>
 			</div>

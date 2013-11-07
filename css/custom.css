@@ -1,4 +1,8 @@
-span {
+#footer {
+  margin-top: 10px;
+}
+
+#footer span {
   padding-top: 10px;
   padding-bottom: 15px;
   padding-left: 10px;
@@ -69,10 +73,6 @@ hr {
   margin-bottom: 7px;
 }
 
-h2 {
-  margin-top: 0px;
-}
-
 .navbar {
   padding-right: 0px;
   padding-left: 0px;
@@ -88,4 +88,134 @@ h2 {
   color: #555555;
   background-color: #C4CFC2;
   border-radius: 4px;
+}
+
+#main h2 {
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-bottom: 0px;
+    border-radius: 4px 4px 0px 0px;
+    box-shadow: none;
+    margin-bottom: 0px;
+    min-height: 20px;
+    padding: 19px;
+    margin-top: 0px;
+}
+
+#main p + h2 {
+    margin-top: 20px;
+}
+
+#main ul + h2 {
+    margin-top: 20px;
+}
+
+#main h3 {
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-top: 0px;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+    min-height: 20px;
+    padding: 19px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#main p {
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-top: 0px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: none;
+    margin-bottom: 0px;
+    min-height: 20px;
+    padding: 19px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+
+#main ul + p {
+    margin-top: -1px;
+    padding-top: 1px;
+}
+
+#main dl + p {
+    margin-top: -1px;
+    padding-top: 1px;
+}
+
+#main p + ul {
+    margin-top: -10px;
+    padding-top: 0px;
+}
+
+#main p + dl {
+    margin-top: -10px;
+    padding-top: 0px;
+}
+
+#main ul + dl {
+    margin-top: -10px;
+    padding-top: 0px;
+}
+
+#main dl + ul {
+    margin-top: -10px;
+    padding-top: 0px;
+}
+
+#main p + p {
+    margin-top: -1px;
+    padding-top: 1px;
+}
+
+#main ul + ul {
+    margin-top: -1px;
+    padding-top: 1px;
+}
+
+#main dl + dl {
+    margin-top: -1px;
+    padding-top: 1px;
+}
+
+#main p + h3 {
+    margin-top: -1px;
+    padding-top: 1px;
+}
+
+#main ul {
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-top: 0px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: none;
+    margin-bottom: 0px;
+    min-height: 20px;
+    padding: 19px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#main dl {
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-top: 0px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: none;
+    margin-bottom: 0px;
+    min-height: 20px;
+    padding: 19px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#main ul li{
+    margin-left: 19px;
+}
+
+#main dl li{
+    margin-left: 19px;
 }
